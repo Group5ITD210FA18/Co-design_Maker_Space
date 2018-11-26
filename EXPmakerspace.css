@@ -1,0 +1,413 @@
+/* General styles
+-------------------------------------------------- */
+body {
+   margin:0
+   padding: 0 0 40px 0; /* zero padding except 40 pixels on bottom */
+}
+.navbar-wrapper {
+   margin:0;
+}
+.container {
+   margin-top: 0;
+}
+
+* {
+margin:0;
+padding:0;
+}
+
+.iconFont{
+	font-family: 'Varela Round', sans-serif;
+	color:#002533;
+	text-shadow:none;
+}
+
+.iconFont p{
+	font-family: 'Varela Round', sans-serif;
+	color:#fff;
+	text-shadow:none;
+}
+.pageText{
+	font-size: 2em;
+	font-family: 'Varela Round', sans-serif;
+	color:#000;
+	text-decoration:none;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+	margin-top:0rem;
+	margin-bottom:0rem;
+    padding-top:0rem;
+	background-color:#fff;
+
+}
+
+/* NEW Experiment Navbar styles
+-------------------------------------------------- */
+header[role="banner"] #logo-main {
+	padding-left: 5%;
+	margin: 2px auto;
+}
+#navbar-primary.navbar-default {
+  background-color: #000;
+  border: none;
+}
+#navbar-primary.navbar-default .navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+#navbar-primary.navbar-default .navbar-nav > li {
+  display: inline-block;
+  float: none;
+}
+#navbar-primary.navbar-default .navbar-nav > li > a {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* original Navbar styles before experiment on contacts page
+-------------------------------------------------- 
+#MSlogo{
+	margin:0;
+	max-height:50%;
+}
+
+.bg-dark-custom{
+	margin:0;
+	padding:0;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+
+
+.lc-custom{
+	background-color: #015581;
+	margin:0 .5%;
+	padding-top:4%;
+	min-width:16.7%;
+	max-height:50%;
+	text-align:center;
+	vertical-align:center;
+	hyphens:auto;
+}
+.navbar-toggler-custom{
+	background-color:#015581;
+}
+*/
+
+/* Navbar styles messed with this for the new nav experiment:
+-------------------------------------------------- */
+#MSlogo{
+	margin:0;
+	max-height:50%;
+}
+
+.bg-dark-custom{
+	margin:0;
+	padding:0;
+}
+
+.lc-custom{
+	background-color: #015581;
+	margin:0;
+	padding:0;
+	min-width:16.7%;
+	text-align:center;
+	vertical-align:center;
+	hyphens:auto;
+}
+
+.lc-custom:hover {
+  background-color:	rgba(66,113,174,0.3);
+}
+.navbar-toggler-custom{
+	background-color:#015581;
+}
+
+
+/* Jumbotron styles
+-------------------------------------------------- */
+.jtron-custom{
+  	background-image: url('images/lasercutbuttonsA.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.headerPic{
+    left: 0;
+    top: 0;
+    width: 100%;
+	min-height:25rem;
+	margin:0;
+	padding:0;
+} 
+.updatesPic{
+    left: 0;
+    top: 0;
+    width: 100%;
+	height:50%;
+}
+
+/* Centered text */
+.pgtitle {
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 20%;
+    left: 0;
+	background-color:rgba(170, 183, 52, 0.5); 
+	text-align:center; 
+	margin: auto; 
+	font-size: 2em;
+	font-family: 'Varela Round', sans-serif;
+	color:#fff;
+}
+
+
+#lgeHeader{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+/* footer styles
+-------------------------------------------------- */
+
+.footer-custom{
+	font-family: 'Varela Round', sans-serif;
+	text-shadow:none;
+	color:#faf8eb;
+	background-color:#015581;
+	padding-top: 2%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  line-height: 30px; /* Vertically center the text there */
+	color:#faf8eb;
+}
+
+
+.iconSize{
+	width: 50%;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+	margin:0px;
+	padding: 0px;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+/*HOME PAGE
+=======================================*/
+.welcomeText{
+	background-color:rgba(170, 183, 52, 0.5); 
+	text-align:center; 
+	margin: 0px 10%; 
+	color:#015581;
+	font-size: 2em;
+	font-weight:bold;
+	font-family: 'Varela Round', sans-serif;
+	text-shadow:none;
+}
+
+/*EVENTS PAGE
+=======================================*/
+
+.my-deck{
+	margin-bottom: 5%;
+}
+
+.my-row{
+	height: auto;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 8%;
+    width: 100%;
+	border: 1px solid #015581;
+	border-radius: 25px;
+	padding:0.5em;
+}
+
+.my-icon{
+	width:100%;
+}
+
+.our-icon{
+
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+.my-colL{
+	background-color:#015581;
+	color:#D7E5EE;
+	text-align:center;
+	vertical-align:middle;
+	font-size:2em;
+	border-radius:25px;
+	padding:2em;
+}
+
+.my-colR{
+	background-color:#fff;
+	padding:2em;
+}
+
+/*EQUIPMENT PAGE
+=======================================*/
+.btn-dark-my{
+	background-color:#4287ae;
+	color:#fff;
+}
+
+.btn:hover {
+  color: #d7e5ee;
+}
+
+
+/*PROJECTS PAGE
+=======================================*/
+ div.code{
+  width: 80%;
+  float: center;
+  margin: auto;
+}
+div.code img{
+  width: 1000px;
+}
+
+div.computer{
+  width: 80%;
+  float: center;
+  margin: auto;
+}
+div.computer img{
+  width: 100%;
+}
+div.maker{
+  width: 80%;
+  float: center;
+  margin: auto;
+}
+div.maker img{
+  width: 100%;
+}
+div.cyberSec{
+  max-width:80%;
+  float: center;
+  margin: auto;
+}
+
+div.cyberSec img{
+  width: 100%;
+}
+.maker.responsive{
+  width:100%;
+  height:auto;
+}
+/*
+.btn {
+    background-color: #015581;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+*/
+
+
+
+/*CONTACTS PAGE
+=======================================*/
+.my-colIconL{
+	text-align:center;
+	vertical-align:middle;
+	border-radius:25px;
+	padding:2em;
+}
+.my-colIconR{
+	color:#015581;
+	padding:2em;
+}
+
+
+/* not working
+#cyberClub #makerClub #codeClub #puterClub{
+	:target{
+		position:absolute;
+		padding-top:200px;	
+}
+*/
+
+
+/*moves ticker up for various devices
+=======================================*/
+
+/*iPhoneX,iPhone6/7/8*/
+@media screen and (width: 375px) {
+.ticker-wrap {
+  bottom: 53%;
+  }
+  
+.headerPic{
+	min-height:23rem;
+} 
+}
+
+/*pixel,pixel2L,iPhone6/7/8 plus*/
+@media screen and (max-width: 414px){
+.ticker-wrap {
+  bottom: 56%;
+  }
+.headerPic{
+	min-height:23rem;
+} 
+}
+
+/*galaxyS5,iPhone5/SE*/
+
+@media screen and (max-width: 360px){
+.ticker-wrap {
+  bottom:50%;
+  }
+.headerPic{
+	min-height:23rem;
+} 
+}
+
+
+@media screen and (width: 320px){
+.ticker-wrap {
+  bottom:45%;
+  }
+.headerPic{
+	min-height:23rem;
+} 
+}
+
