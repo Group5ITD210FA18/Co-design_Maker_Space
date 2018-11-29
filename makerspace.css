@@ -92,7 +92,15 @@ header[role="banner"] #logo-main {
 	hyphens:auto;
 }
 
+.carousel-caption{
+	color:#fff;
+}
 
+.carousel-inner {
+  height:auto;
+  max-width: 58%;
+  margin: 0 auto;
+}
 
 .lc-custom:hover {
   background-color:	rgba(66,113,174,0.3);
@@ -220,7 +228,7 @@ code {
 	height: auto;
     margin-left: auto;
     margin-right: auto;
-	margin-bottom: 8%;
+	margin-bottom: 5%;
     width: 100%;
 	border: 1px solid #015581;
 	border-radius: 25px;
@@ -234,6 +242,7 @@ code {
 .our-icon{
 	margin-left: auto;
     margin-right: auto;
+	margin-top:3%;
 }
 
 
@@ -252,6 +261,58 @@ code {
 	padding:2em;
 }
 
+
+
+ /*ticker*/
+
+ @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+  .tcontainer{
+	margin-top: 0;
+    width: 100%;
+    overflow: hidden;
+	background-color: #003A5C;
+  }
+  .ticker-wrap {
+    width: 100%;
+    padding-left: 100%;
+    background-color: #BDBC3E;
+  }
+  .ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 10s;
+  }
+  .ticker-move:hover{
+    animation-play-state: paused;
+  }
+  div.ticker-item{
+	font-family:courier new;
+	color: #003A5C;
+	font-size: 36px;
+    display: inline-block;
+    padding: 0 2rem;
+	z-index: 10;
+
+  }
+ .UpInfo {
+	 position: relative;
+	 display: block;
+	 color:black;
+	 font-size: 14px;
+	 padding-top: 60px;
+	 padding-left: 40px;
+	 padding-right: 40px;
+ }
+
+
+
 /*EQUIPMENT PAGE
 =======================================*/
 .btn-dark-my{
@@ -260,7 +321,9 @@ code {
 }
 
 .btn:hover {
-  color: #d7e5ee;
+	background-color:#EBEED3;
+	color: #015581;
+
 }
 
 
@@ -269,41 +332,42 @@ code {
 div.code{
   width: 100%;
   float: center;
-  padding: 0 20%;
+  padding: 3% 20% 3% 20%;
 }
 
 div.computer{
   width: 100%;
   float: center;
-  padding: 0 20%;
+  padding: 0 20% 3% 20%;
 }
 
 div.maker{
   width: 100%;
   float: center;
-  padding: 0 20%;
+  padding: 0 20% 3% 20%;
 }
 
 div.cyberSec{
   width:100%;
   float: center;
-  padding: 0 10%;
+  padding: 0 20%;
 }
 
 .responsive{
   max-width:1000px;
   height:auto;
 }
-/*
+
 .btn {
-    background-color: #015581;
-    border: none;
-    color: white;
+    background-color: #D0D696;
+    color: #015581;
+	border: 1px;
+	border-color: #4287AE;
+	font-weight: 1.5em;
     padding: 12px 30px;
-    cursor: pointer;
     font-size: 20px;
 }
-*/
+
 
 
 
@@ -320,14 +384,6 @@ div.cyberSec{
 	padding:2em;
 }
 
-
-/* not working
-#cyberClub #makerClub #codeClub #puterClub{
-	:target{
-		position:absolute;
-		padding-top:200px;	
-}
-*/
 
 
 /*moves ticker up for various devices
@@ -357,6 +413,8 @@ div.cyberSec{
 /*galaxyS5,iPhone5/SE*/
 
 @media screen and (max-width: 360px){
+	
+
 .ticker-wrap {
   bottom:50%;
   }
