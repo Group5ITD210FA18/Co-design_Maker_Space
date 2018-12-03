@@ -42,13 +42,13 @@ body {
   /* Margin bottom by footer height */
 	margin-top:0rem;
 	margin-bottom:0rem;
-    padding-top:0rem;
+  padding-top:0rem;
 	background-color:#fff;
 
 }
 
 /* NEW Experiment Navbar styles
--------------------------------------------------- 
+--------------------------------------------------
 header[role="banner"] #logo-main {
 	padding-left: 5%;
 	margin: 2px auto;
@@ -97,10 +97,30 @@ header[role="banner"] #logo-main {
 }
 
 .carousel-inner {
-  height:auto;
-  max-width: 58%;
+  background-image: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+vertical-align:middle;
+  min-height:400px;
+overflow:hidden;
+max-width:58%;
+  min-width: 370px;
   margin: 0 auto;
 }
+
+/*background-image: no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+height:100%;
+max-width: 58%;
+min-width: 370px;
+margin: 0 auto;
+*/
 
 .lc-custom:hover {
   background-color:	rgba(66,113,174,0.3);
@@ -116,7 +136,7 @@ header[role="banner"] #logo-main {
 /* Jumbotron styles
 -------------------------------------------------- */
 .jtron-custom{
-  	background-image: url('images/lasercutbuttonsA.jpg') no-repeat center center fixed; 
+  	background-image: no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -130,13 +150,8 @@ header[role="banner"] #logo-main {
 	min-height:25rem;
 	margin:0;
 	padding:0;
-} 
-.updatesPic{
-    left: 0;
-    top: 0;
-    width: 100%;
-	height:50%;
 }
+
 
 /* Centered text */
 .pgtitle {
@@ -144,9 +159,9 @@ header[role="banner"] #logo-main {
     position: sticky;
     top: 20%;
     left: 0;
-	background-color:rgba(170, 183, 52, 0.5); 
-	text-align:center; 
-	margin: auto; 
+	background-color:rgba(170, 183, 52, 0.5);
+	text-align:center;
+	margin: auto;
 	font-size: 2em;
 	font-family: 'Varela Round', sans-serif;
 	color:#fff;
@@ -180,9 +195,18 @@ header[role="banner"] #logo-main {
   line-height: 30px; /* Vertically center the text there */
 	color:#faf8eb;
 }
-
-
+/*Social media icons
+-------------------------------------------------- */
 .iconSize{
+	width: 50%;
+}
+
+/*Responsive
+-------------------------------------------------- */
+
+.cus-Icon{
+  margin:0;
+  padding:3%;
 	width: 50%;
 }
 
@@ -207,9 +231,9 @@ code {
 /*HOME PAGE
 =======================================*/
 .welcomeText{
-	background-color:rgba(170, 183, 52, 0.5); 
-	text-align:center; 
-	margin: 0px 10%; 
+	background-color:rgba(170, 183, 52, 0.5);
+	text-align:center;
+	margin: 0px 10%;
 	color:#015581;
 	font-size: 2em;
 	font-weight:bold;
@@ -228,7 +252,7 @@ code {
 	height: auto;
     margin-left: auto;
     margin-right: auto;
-	margin-bottom: 5%;
+	   margin-bottom: 5%;
     width: 100%;
 	border: 1px solid #015581;
 	border-radius: 25px;
@@ -237,6 +261,7 @@ code {
 
 .my-icon{
 	width:100%;
+  	border-radius: 25px;
 }
 
 .our-icon{
@@ -323,7 +348,10 @@ code {
 .btn:hover {
 	background-color:#EBEED3;
 	color: #015581;
+}
 
+.cus-image{
+  border-radius: 25px;
 }
 
 
@@ -391,45 +419,32 @@ div.cyberSec{
 
 /*iPhoneX,iPhone6/7/8*/
 @media screen and (width: 375px) {
-.ticker-wrap {
-  bottom: 53%;
+
+  .iconSize{
+  	width: 50%;
   }
-  
-.headerPic{
-	min-height:23rem;
-} 
+
 }
 
 /*pixel,pixel2L,iPhone6/7/8 plus*/
 @media screen and (max-width: 414px){
-.ticker-wrap {
-  bottom: 56%;
-  }
-.headerPic{
-	min-height:23rem;
-} 
+
 }
 
 /*galaxyS5,iPhone5/SE*/
 
 @media screen and (max-width: 360px){
-	
 
-.ticker-wrap {
-  bottom:50%;
-  }
-.headerPic{
-	min-height:23rem;
-} 
+
 }
+/*iPad/iPadPro*/
+@media screen and (max-width: 1024px){
 
+  .iconSize{
+    width: 80%;
+  }
+}
 
 @media screen and (width: 320px){
-.ticker-wrap {
-  bottom:45%;
-  }
-.headerPic{
-	min-height:23rem;
-} 
-}
 
+}
