@@ -4,12 +4,37 @@ body {
    margin:0
    padding: 0 0 40px 0; /* zero padding except 40 pixels on bottom */
 }
+header[role="banner"] #logo-main {
+	padding-left: 5%;
+	margin: 2px auto;
+}
+#navbar-primary.navbar-default {
+  background-color: #000;
+  border: none;
+}
+#navbar-primary.navbar-default .navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+#navbar-primary.navbar-default .navbar-nav > li {
+  display: inline-block;
+  float: none;
+}
+#navbar-primary.navbar-default .navbar-nav > li > a {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .navbar-wrapper {
    margin:0;
 }
 .container {
    margin-top: 0;
 }
+#navbarCollapse.collapse.navbar-collapse {
+	padding-top: 20px;
+
+}
+
 
 * {
 margin:0;
@@ -42,13 +67,13 @@ body {
   /* Margin bottom by footer height */
 	margin-top:0rem;
 	margin-bottom:0rem;
-  padding-top:0rem;
+    padding-top:0rem;
 	background-color:#fff;
 
 }
 
 /* NEW Experiment Navbar styles
---------------------------------------------------
+-------------------------------------------------- */
 header[role="banner"] #logo-main {
 	padding-left: 5%;
 	margin: 2px auto;
@@ -56,6 +81,7 @@ header[role="banner"] #logo-main {
 #navbar-primary.navbar-default {
   background-color: #000;
   border: none;
+  max-height: 50%;
 }
 #navbar-primary.navbar-default .navbar-nav {
   width: 100%;
@@ -69,8 +95,36 @@ header[role="banner"] #logo-main {
   padding-left: 30px;
   padding-right: 30px;
 }
-*/
+
+
+
 /* original Navbar styles before experiment on contacts page
+--------------------------------------------------
+#MSlogo{
+	margin:0;
+	max-height:50%;
+}
+.bg-dark-custom{
+	margin:0;
+	padding:0;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+.lc-custom{
+	background-color: #015581;
+	margin:0 .5%;
+	padding-top:4%;
+	min-width:16.7%;
+	max-height:50%;
+	text-align:center;
+	vertical-align:center;
+	hyphens:auto;
+}
+.navbar-toggler-custom{
+	background-color:#015581;
+}
+*/
+
+/* Navbar styles messed with this for the new nav experiment:
 -------------------------------------------------- */
 #MSlogo{
 	margin:0;
@@ -92,51 +146,18 @@ header[role="banner"] #logo-main {
 	hyphens:auto;
 }
 
-.carousel-caption{
-	color:#fff;
-}
-
-.carousel-inner {
-  background-image: no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-vertical-align:middle;
-  min-height:400px;
-overflow:hidden;
-max-width:58%;
-  min-width: 370px;
-  margin: 0 auto;
-}
-
-/*background-image: no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-
-height:100%;
-max-width: 58%;
-min-width: 370px;
-margin: 0 auto;
-*/
-
 .lc-custom:hover {
   background-color:	rgba(66,113,174,0.3);
-  color:#fff;
 }
-
 .navbar-toggler-custom{
 	background-color:#015581;
 }
 
 
-
 /* Jumbotron styles
 -------------------------------------------------- */
 .jtron-custom{
-  	background-image: no-repeat center center fixed;
+  	background-image: url('images/lasercutbuttonsA.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -151,7 +172,12 @@ margin: 0 auto;
 	margin:0;
 	padding:0;
 }
-
+.updatesPic{
+    left: 0;
+    top: 0;
+    width: 100%;
+	height:50%;
+}
 
 /* Centered text */
 .pgtitle {
@@ -195,18 +221,9 @@ margin: 0 auto;
   line-height: 30px; /* Vertically center the text there */
 	color:#faf8eb;
 }
-/*Social media icons
--------------------------------------------------- */
+
+
 .iconSize{
-	width: 50%;
-}
-
-/*Responsive
--------------------------------------------------- */
-
-.cus-Icon{
-  margin:0;
-  padding:3%;
 	width: 50%;
 }
 
@@ -252,7 +269,7 @@ code {
 	height: auto;
     margin-left: auto;
     margin-right: auto;
-	   margin-bottom: 5%;
+	margin-bottom: 8%;
     width: 100%;
 	border: 1px solid #015581;
 	border-radius: 25px;
@@ -261,13 +278,12 @@ code {
 
 .my-icon{
 	width:100%;
-  	border-radius: 25px;
 }
 
 .our-icon{
+
 	margin-left: auto;
     margin-right: auto;
-	margin-top:3%;
 }
 
 
@@ -286,24 +302,22 @@ code {
 	padding:2em;
 }
 
+/*ticker*/
 
-
- /*ticker*/
-
- @keyframes ticker {
+@keyframes ticker {
     0% { transform: translate3d(0, 0, 0); }
     100% { transform: translate3d(-100%, 0, 0); }
   }
   .tcontainer{
-	margin-top: 0;
+	margin-top: 100px;
     width: 100%;
     overflow: hidden;
-	background-color: #003A5C;
+	background-color: #D0D696;
   }
   .ticker-wrap {
     width: 100%;
     padding-left: 100%;
-    background-color: #BDBC3E;
+    background-color: #D0D696;
   }
   .ticker-move {
     display: inline-block;
@@ -319,7 +333,7 @@ code {
   }
   div.ticker-item{
 	font-family:courier new;
-	color: #003A5C;
+	color: #015581;
 	font-size: 36px;
     display: inline-block;
     padding: 0 2rem;
@@ -329,14 +343,12 @@ code {
  .UpInfo {
 	 position: relative;
 	 display: block;
-	 color:black;
+	 color: #015581;
 	 font-size: 14px;
 	 padding-top: 60px;
 	 padding-left: 40px;
 	 padding-right: 40px;
  }
-
-
 
 /*EQUIPMENT PAGE
 =======================================*/
@@ -346,57 +358,89 @@ code {
 }
 
 .btn:hover {
-	background-color:#EBEED3;
-	color: #015581;
-}
-
-.cus-image{
-  border-radius: 25px;
+  background-color: #D0CC71;
+  color: #d7e5ee;
 }
 
 
 /*PROJECTS PAGE
 =======================================*/
-div.code{
-  width: 100%;
+ div.code{
+  max-width: 60%;
   float: center;
-  padding: 3% 20% 3% 20%;
+  margin: auto;
+}
+div.code img{
+  width: 100%;
+}
+div.code h2{
+  margin-top: 20px;
+
+}
+div.computer{
+  max-width: 60%;
+  float: center;
+  margin: auto;
+}
+div.computer img{
+  width: 100%;
 }
 
-div.computer{
-  width: 100%;
-  float: center;
-  padding: 0 20% 3% 20%;
+div.computer h2{
+ margin-top: 20px;
 }
 
 div.maker{
-  width: 100%;
+  max-width: 60%;
   float: center;
-  padding: 0 20% 3% 20%;
+  margin: auto;
+}
+div.maker img{
+  width: 100%;
+}
+div.maker h2{
+  margin-top: 20px;
 }
 
 div.cyberSec{
-  width:100%;
+  max-width: 60%;
   float: center;
-  padding: 0 20%;
+  margin: auto;
 }
 
-.responsive{
-  max-width:1000px;
+div.cyberSec img{
+  width: 100%;
+}
+
+div.cyberSec h2{
+margin-top: 20px;
+}
+.maker.responsive{
+  width:100%;
   height:auto;
 }
-
+/*
 .btn {
-    background-color: #D0D696;
-    color: #015581;
-	border: 1px;
-	border-color: #4287AE;
-	font-weight: 1.5em;
+    background-color: #015581;
+    border: none;
+    color: white;
     padding: 12px 30px;
+    cursor: pointer;
     font-size: 20px;
 }
-
-
+*/
+.btn {
+    background-color: #D0D696;
+    border: none;
+    color: #015581;
+	font-weight: bold;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.btn:hover {
+    background-color: #01689E;
+}
 
 
 /*CONTACTS PAGE
@@ -413,38 +457,158 @@ div.cyberSec{
 }
 
 
+/* not working
+#cyberClub #makerClub #codeClub #puterClub{
+	:target{
+		position:absolute;
+		padding-top:200px;
+}
+*/
 
+/* Carousel styles */
+div#myCarousel.carousel.slide {
+  margin-right: auto;
+  margin-left: auto;
+}
+.carousel {
+  height: 425px;
+  margin: 0 auto;
+  width: 58%;
+}
+.carousel-caption {
+  z-index: 10;
+  text-shadow: none;
+}
+
+.carousel .item {
+  height: 500px;
+  background-color: #AAAD00;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 75%;
+  height: 700px;
+}
+.btn.btn-lg.btn-primary {
+	background-color: #D0D696;
+	color: #015581 ;
+	font-weight: bold;
+}
+
+/*Home page club icon buttons*/
+.btn.btn-secondary {
+	background-color: #D0D696;
+	color: #015581;
+	font-weight: bold;
+}
+a.btn.btn-secondary {
+  justify-content: left;
+}
+
+
+/* SA Home marketing content styles */
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  margin-top: 5px;
+  text-align: center;
+  color: black;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+ div.container.marketing {
+	 margin-top: 30px;
+ }
+ div.container.marketing {
+	 margin-bottom: 10px;
+ }
+ div.col-lg-4 {
+align-content: left;
+ }
+p             {
+   text-align: left;
+ }
+ul li {
+   font-size: 26px;
+   text-align: left;
+ }
+
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* Club page styles */
+
+div.card-image-top img {
+	width: 235px;
+	height: 225px;
+}
+div.card-deck {
+	margin-top: 20px;
+}
+
+/* SA Projects page styles*/
+img.responsive {
+	margin-top: 20px;
+}
 /*moves ticker up for various devices
 =======================================*/
 
 /*iPhoneX,iPhone6/7/8*/
 @media screen and (width: 375px) {
-
-  .iconSize{
-  	width: 50%;
+.ticker-wrap {
+  bottom: 53%;
   }
 
+.headerPic{
+	min-height:23rem;
+}
 }
 
 /*pixel,pixel2L,iPhone6/7/8 plus*/
 @media screen and (max-width: 414px){
-
+.ticker-wrap {
+  bottom: 56%;
+  }
+.headerPic{
+	min-height:23rem;
+}
 }
 
 /*galaxyS5,iPhone5/SE*/
 
 @media screen and (max-width: 360px){
-
-
-}
-/*iPad/iPadPro*/
-@media screen and (max-width: 1024px){
-
-  .iconSize{
-    width: 80%;
+.ticker-wrap {
+  bottom:50%;
   }
+.headerPic{
+	min-height:23rem;
 }
+}
+
 
 @media screen and (width: 320px){
-
+.ticker-wrap {
+  bottom:45%;
+  }
+.headerPic{
+	min-height:23rem;
 }
+}
+with sa home marketing added 
