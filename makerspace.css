@@ -4,37 +4,12 @@ body {
    margin:0
    padding: 0 0 40px 0; /* zero padding except 40 pixels on bottom */
 }
-header[role="banner"] #logo-main {
-	padding-left: 5%;
-	margin: 2px auto;
-}
-#navbar-primary.navbar-default {
-  background-color: #000;
-  border: none;
-}
-#navbar-primary.navbar-default .navbar-nav {
-  width: 100%;
-  text-align: center;
-}
-#navbar-primary.navbar-default .navbar-nav > li {
-  display: inline-block;
-  float: none;
-}
-#navbar-primary.navbar-default .navbar-nav > li > a {
-  padding-left: 30px;
-  padding-right: 30px;
-}
 .navbar-wrapper {
    margin:0;
 }
 .container {
    margin-top: 0;
 }
-#navbarCollapse.collapse.navbar-collapse {
-	padding-top: 20px;
-
-}
-
 
 * {
 margin:0;
@@ -67,13 +42,13 @@ body {
   /* Margin bottom by footer height */
 	margin-top:0rem;
 	margin-bottom:0rem;
-    padding-top:0rem;
+  padding-top:0rem;
 	background-color:#fff;
 
 }
 
 /* NEW Experiment Navbar styles
--------------------------------------------------- */
+--------------------------------------------------
 header[role="banner"] #logo-main {
 	padding-left: 5%;
 	margin: 2px auto;
@@ -81,7 +56,6 @@ header[role="banner"] #logo-main {
 #navbar-primary.navbar-default {
   background-color: #000;
   border: none;
-  max-height: 50%;
 }
 #navbar-primary.navbar-default .navbar-nav {
   width: 100%;
@@ -95,36 +69,8 @@ header[role="banner"] #logo-main {
   padding-left: 30px;
   padding-right: 30px;
 }
-
-
-
-/* original Navbar styles before experiment on contacts page
---------------------------------------------------
-#MSlogo{
-	margin:0;
-	max-height:50%;
-}
-.bg-dark-custom{
-	margin:0;
-	padding:0;
-    background-color:rgba(255, 255, 255, 0.5);
-}
-.lc-custom{
-	background-color: #015581;
-	margin:0 .5%;
-	padding-top:4%;
-	min-width:16.7%;
-	max-height:50%;
-	text-align:center;
-	vertical-align:center;
-	hyphens:auto;
-}
-.navbar-toggler-custom{
-	background-color:#015581;
-}
 */
-
-/* Navbar styles messed with this for the new nav experiment:
+/* original Navbar styles before experiment on contacts page
 -------------------------------------------------- */
 #MSlogo{
 	margin:0;
@@ -139,25 +85,108 @@ header[role="banner"] #logo-main {
 .lc-custom{
 	background-color: #015581;
 	margin:0;
-	padding-top:4%;
+  padding:4% 2% 2% 2%;
 	min-width:16.7%;
 	text-align:center;
 	vertical-align:center;
 	hyphens:auto;
 }
 
+.lc-custom-hm{
+padding-top: 4%;
+}
+
+
 .lc-custom:hover {
   background-color:	rgba(66,113,174,0.3);
+  color:#fff;
 }
+
 .navbar-toggler-custom{
 	background-color:#015581;
 }
+
+/* Home page carousel styles
+-------------------------------------------------- */
+div#myCarousel.carousel.slide {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#myCarousel{
+  background-image: linear-gradient(to right, #015581, #000, #000, #015581);
+    height: 400px;
+}
+
+
+
+.carousel {
+  height: 600px;
+  margin: 0 auto;
+}
+.carousel-caption {
+  z-index: 10;
+  	color:#fff;
+  text-shadow: none;
+}
+
+.carousel-item {
+  height: 400px;
+  /* you need to match the shadow color to your background or image border for the desired effect*/
+  box-shadow: 3px 3px 33px 26px rgba(0,0,0,0.3) inset;
+  -webkit-box-shadow: 3px 3px 33px 26px rgba(0,0,0,0.3) inset;
+  -moz-box-shadow: 3px 3px 33px 26px rgba(0,0,0,0.3) inset;
+}
+
+.carousel-inner > .carousel-item > img {
+  position:centered;
+  min-width: 100%;
+  height: 400px;
+
+  }
+
+}
+
+
+
+
+
+
+/*
+.carousel-inner {
+  background-image: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+vertical-align:middle;
+  min-height:400px;
+overflow:hidden;
+max-width:70%;
+  min-width: 370px;
+  margin: 0 auto;
+}
+*/
+
+/*background-image: no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+height:100%;
+max-width: 58%;
+min-width: 370px;
+margin: 0 auto;
+*/
+
+
 
 
 /* Jumbotron styles
 -------------------------------------------------- */
 .jtron-custom{
-  	background-image: url('images/lasercutbuttonsA.jpg') no-repeat center center fixed;
+  	background-image: no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -172,12 +201,7 @@ header[role="banner"] #logo-main {
 	margin:0;
 	padding:0;
 }
-.updatesPic{
-    left: 0;
-    top: 0;
-    width: 100%;
-	height:50%;
-}
+
 
 /* Centered text */
 .pgtitle {
@@ -212,6 +236,14 @@ header[role="banner"] #logo-main {
 	padding-top: 2%;
 }
 
+.footer-custom h2{
+  color:#d0d696;
+}
+
+.footer-custom p {
+    padding-left:3%;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -222,8 +254,23 @@ header[role="banner"] #logo-main {
 	color:#faf8eb;
 }
 
+.footer-custom hr {
+    border:2px solid white;
+}
 
+
+/*Social media icons
+-------------------------------------------------- */
 .iconSize{
+	width: 50%;
+}
+
+/*Responsive
+-------------------------------------------------- */
+
+.cus-Icon{
+  margin:0;
+  padding:3%;
 	width: 50%;
 }
 
@@ -269,7 +316,7 @@ code {
 	height: auto;
     margin-left: auto;
     margin-right: auto;
-	margin-bottom: 8%;
+	   margin-bottom: 5%;
     width: 100%;
 	border: 1px solid #015581;
 	border-radius: 25px;
@@ -278,12 +325,13 @@ code {
 
 .my-icon{
 	width:100%;
+  	border-radius: 25px;
 }
 
 .our-icon{
-
 	margin-left: auto;
     margin-right: auto;
+	margin-top:3%;
 }
 
 
@@ -302,22 +350,24 @@ code {
 	padding:2em;
 }
 
-/*ticker*/
 
-@keyframes ticker {
+
+ /*ticker*/
+
+ @keyframes ticker {
     0% { transform: translate3d(0, 0, 0); }
     100% { transform: translate3d(-100%, 0, 0); }
   }
   .tcontainer{
-	margin-top: 100px;
+	margin-top: 0;
     width: 100%;
     overflow: hidden;
-	background-color: #D0D696;
+	background-color: #003A5C;
   }
   .ticker-wrap {
     width: 100%;
     padding-left: 100%;
-    background-color: #D0D696;
+    background-color: #B32018;
   }
   .ticker-move {
     display: inline-block;
@@ -333,114 +383,102 @@ code {
   }
   div.ticker-item{
 	font-family:courier new;
-	color: #015581;
+  text-transform:uppercase;
+	color: #fff;
 	font-size: 36px;
     display: inline-block;
     padding: 0 2rem;
+    font-weight: bolder;
 	z-index: 10;
 
   }
  .UpInfo {
 	 position: relative;
 	 display: block;
-	 color: #015581;
+	 color:black;
 	 font-size: 14px;
 	 padding-top: 60px;
 	 padding-left: 40px;
 	 padding-right: 40px;
  }
 
+
+
 /*EQUIPMENT PAGE
 =======================================*/
+.eq-page {
+  padding: 0 15%;
+}
+
 .btn-dark-my{
 	background-color:#4287ae;
 	color:#fff;
 }
 
 .btn:hover {
-  background-color: #D0CC71;
-  color: #d7e5ee;
+	background-color:#EBEED3;
+	color: #015581;
+}
+
+.cus-image{
+  border-radius: 25px;
+}
+
+/*CLUBS PAGE
+=======================================*/
+#cyberClub{
+  margin-top: 3%;
+}
+
+.info-list li{
+  list-style-type:none;
+  padding-left: 3%;
 }
 
 
 /*PROJECTS PAGE
 =======================================*/
- div.code{
-  max-width: 60%;
-  float: center;
-  margin: auto;
-}
-div.code img{
+div.code{
   width: 100%;
+  float: center;
+  padding: 3% 20%;
 }
-div.code h2{
-  margin-top: 20px;
 
-}
 div.computer{
-  max-width: 60%;
-  float: center;
-  margin: auto;
-}
-div.computer img{
   width: 100%;
-}
-
-div.computer h2{
- margin-top: 20px;
+  float: center;
+  padding: 0 20%;
 }
 
 div.maker{
-  max-width: 60%;
-  float: center;
-  margin: auto;
-}
-div.maker img{
   width: 100%;
-}
-div.maker h2{
-  margin-top: 20px;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div.cyberSec{
-  max-width: 60%;
-  float: center;
-  margin: auto;
-}
-
-div.cyberSec img{
-  width: 100%;
-}
-
-div.cyberSec h2{
-margin-top: 20px;
-}
-.maker.responsive{
   width:100%;
+  float: center;
+  padding: 0 20%;
+}
+
+.responsive{
+  max-width:1000px;
   height:auto;
 }
-/*
-.btn {
-    background-color: #015581;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 20px;
-}
-*/
+
 .btn {
     background-color: #D0D696;
-    border: none;
     color: #015581;
-	font-weight: bold;
+	border: 1px;
+	border-color: #4287AE;
+	font-weight: 1.5em;
     padding: 12px 30px;
-    cursor: pointer;
     font-size: 20px;
 }
-.btn:hover {
-    background-color: #01689E;
-}
+
+
 
 
 /*CONTACTS PAGE
@@ -457,158 +495,38 @@ margin-top: 20px;
 }
 
 
-/* not working
-#cyberClub #makerClub #codeClub #puterClub{
-	:target{
-		position:absolute;
-		padding-top:200px;
-}
-*/
 
-/* Carousel styles */
-div#myCarousel.carousel.slide {
-  margin-right: auto;
-  margin-left: auto;
-}
-.carousel {
-  height: 425px;
-  margin: 0 auto;
-  width: 58%;
-}
-.carousel-caption {
-  z-index: 10;
-  text-shadow: none;
-}
-
-.carousel .item {
-  height: 500px;
-  background-color: #AAAD00;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 75%;
-  height: 700px;
-}
-.btn.btn-lg.btn-primary {
-	background-color: #D0D696;
-	color: #015581 ;
-	font-weight: bold;
-}
-
-/*Home page club icon buttons*/
-.btn.btn-secondary {
-	background-color: #D0D696;
-	color: #015581;
-	font-weight: bold;
-}
-a.btn.btn-secondary {
-  justify-content: left;
-}
-
-
-/* SA Home marketing content styles */
-
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  margin-top: 5px;
-  text-align: center;
-  color: black;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
- div.container.marketing {
-	 margin-top: 30px;
- }
- div.container.marketing {
-	 margin-bottom: 10px;
- }
- div.col-lg-4 {
-align-content: left;
- }
-p             {
-   text-align: left;
- }
-ul li {
-   font-size: 26px;
-   text-align: left;
- }
-
-/* Featurettes
-------------------------- */
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-/* Club page styles */
-
-div.card-image-top img {
-	width: 235px;
-	height: 225px;
-}
-div.card-deck {
-	margin-top: 20px;
-}
-
-/* SA Projects page styles*/
-img.responsive {
-	margin-top: 20px;
-}
 /*moves ticker up for various devices
 =======================================*/
 
 /*iPhoneX,iPhone6/7/8*/
 @media screen and (width: 375px) {
-.ticker-wrap {
-  bottom: 53%;
+
+  .iconSize{
+  	width: 50%;
   }
 
-.headerPic{
-	min-height:23rem;
-}
 }
 
 /*pixel,pixel2L,iPhone6/7/8 plus*/
 @media screen and (max-width: 414px){
-.ticker-wrap {
-  bottom: 56%;
-  }
-.headerPic{
-	min-height:23rem;
-}
+
 }
 
 /*galaxyS5,iPhone5/SE*/
 
 @media screen and (max-width: 360px){
-.ticker-wrap {
-  bottom:50%;
-  }
-.headerPic{
-	min-height:23rem;
-}
-}
 
+
+}
+/*iPad/iPadPro*/
+@media screen and (max-width: 1024px){
+
+  .iconSize{
+    width: 80%;
+  }
+}
 
 @media screen and (width: 320px){
-.ticker-wrap {
-  bottom:45%;
-  }
-.headerPic{
-	min-height:23rem;
+
 }
-}
-with sa home marketing added 
