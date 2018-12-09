@@ -9,6 +9,7 @@ header {
   margin-top:0;
   padding:0;
 }
+
 .navbar-wrapper {
    margin:0;
 }
@@ -52,29 +53,6 @@ body {
 
 }
 
-/* NEW Experiment Navbar styles
---------------------------------------------------
-header[role="banner"] #logo-main {
-	padding-left: 5%;
-	margin: 2px auto;
-}
-#navbar-primary.navbar-default {
-  background-color: #000;
-  border: none;
-}
-#navbar-primary.navbar-default .navbar-nav {
-  width: 100%;
-  text-align: center;
-}
-#navbar-primary.navbar-default .navbar-nav > li {
-  display: inline-block;
-  float: none;
-}
-#navbar-primary.navbar-default .navbar-nav > li > a {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-*/
 /* original Navbar styles before experiment on contacts page
 -------------------------------------------------- */
 #MSlogo{
@@ -102,7 +80,7 @@ navbar-brand-cus {
 	vertical-align:center;
 	hyphens:auto;
 }
-
+/*home page need special styling*/
 .lc-custom-hm{
 padding-top: 4%;
 }
@@ -112,7 +90,7 @@ padding: 6% 6% 0 6%;
 }
 
 .lc-custom:hover {
-  background-color:	rgba(66,113,174,0.3);
+  background-color:	rgba(66,113,174,0.4);
   color:#fff;
 }
 
@@ -146,6 +124,7 @@ div#myCarousel.carousel.slide {
   text-shadow: none;
 }
 
+/*added gradient background image, to display slides w/o stretch */
 .carousel-inner > .carousel-item > img {
   display:block;
   margin-left: auto;
@@ -157,36 +136,6 @@ div#myCarousel.carousel.slide {
   -webkit-box-shadow: 3px 3px 33px 26px rgba(0,0,0,0.3) inset;
   -moz-box-shadow: 3px 3px 33px 26px rgba(0,0,0,0.3) inset;
   }
-
-/*
-.carousel-inner {
-  background-image: no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-vertical-align:middle;
-  min-height:400px;
-overflow:hidden;
-max-width:70%;
-  min-width: 370px;
-  margin: 0 auto;
-}
-*/
-
-/*background-image: no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-
-height:100%;
-max-width: 58%;
-min-width: 370px;
-margin: 0 auto;
-*/
-
-
 
 
 /* Jumbotron styles
@@ -203,9 +152,9 @@ margin: 0 auto;
     left: 0;
     top: 0;
     width: 100%;
-	min-height:25rem;
-	margin:0;
-	padding:0;
+	  min-height:25rem;
+	  margin:0;
+  	padding:0;
 }
 
 
@@ -365,7 +314,7 @@ code {
     100% { transform: translate3d(-100%, 0, 0); }
   }
   .tcontainer{
-	margin-top: 0;
+	  margin-top: 0;
     width: 100%;
     overflow: hidden;
 	  background-color: #003A5C;
@@ -539,7 +488,7 @@ div.cyberSec{
   }
 
 }
-/*iPad/iPadPro*/
+/*iPad*//*iPadPro*/
 @media screen and (max-width: 1024px){
 
   .iconSize{
@@ -552,10 +501,11 @@ div.cyberSec{
 
 }
 
+/*desktop*/
 @media screen and (min-width: 1280px){
 
   #MSlogo{
-    width: 100%;
+    width:100%;
   }
 
 }
